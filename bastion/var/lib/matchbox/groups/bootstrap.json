@@ -1,0 +1,8 @@
+{
+"id": "bootstrap",
+"name": "OCP 4 – Bootstrap server",
+"profile": "bootstrap",
+"selector": {
+  "mac": "00:1a:4a:16:01:20"
+}
+}

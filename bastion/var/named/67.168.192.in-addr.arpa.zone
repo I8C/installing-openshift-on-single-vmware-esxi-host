@@ -1,0 +1,19 @@
+$TTL 900
+@	IN	SOA	bastion.ocp67.i8c-lab-02.iconos.be.	hostmaster.ocp67.i8c-lab-02.iconos.be. (
+	2019062001
+	1D
+	1H
+	1W
+	3H
+)
+	IN	NS	bastion.ocp67.i8c-lab-02.iconos.be.
+1	IN	PTR	bastion.ocp67.i8c-lab-02.iconos.be.
+10	IN	PTR	master-0.ocp67.i8c-lab-02.iconos.be.
+11	IN	PTR	master-1.ocp67.i8c-lab-02.iconos.be.
+12	IN	PTR	master-2.ocp67.i8c-lab-02.iconos.be.
+;20 IN PTR infnod-0.ocp67.i8c-lab-02.iconos.be.
+;21 IN PTR infnod-1.ocp67.i8c-lab-02.iconos.be.
+30	IN	PTR	cptnod-0.ocp67.i8c-lab-02.iconos.be.
+31	IN	PTR	cptnod-1.ocp67.i8c-lab-02.iconos.be.
+;32 IN PTR cptnod-1.ocp67.i8c-lab-02.iconos.be.
+253	IN	PTR	bootstrap.ocp67.i8c-lab-02.iconos.be.

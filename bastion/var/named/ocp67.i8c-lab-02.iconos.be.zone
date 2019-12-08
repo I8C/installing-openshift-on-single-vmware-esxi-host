@@ -1,0 +1,30 @@
+$TTL 900
+@	IN	SOA	bastion.ocp67.i8c-lab-02.iconos.be.	hostmaster.ocp67.i8c-lab-02.iconos.be. (
+		2019062002 ; serial
+		1D ; refresh after one day
+		1H ; retry after one hour
+		1W ; expire after 1 week
+		3H ; minimum TTL of 1 day
+)
+
+	IN	NS	bastion.ocp67.i8c-lab-02.iconos.be.
+bastion 	IN	A	192.168.67.1
+bootstrap	IN	A	192.168.67.253
+master-0	IN	A	192.168.67.10
+master-1	IN	A	192.168.67.11
+master-2	IN	A	192.168.67.12
+;infnod-0 IN A 192.168.67.20
+;infnod-1 IN A 192.168.67.21
+cptnod-0	IN	A	192.168.67.30
+cptnod-1	IN	A	192.168.67.31
+;cptnod-2 IN A 192.168.67.32
+api		IN	A	192.168.67.1
+api-int		IN	A	192.168.67.1
+apps		IN	A	192.168.67.1
+*.apps		IN	A	192.168.67.1
+etcd-0		IN	A	192.168.67.10
+etcd-1		IN	A	192.168.67.11
+etcd-2		IN	A	192.168.67.12
+_etcd-server-ssl._tcp 	IN	SRV	0	10	2380	etcd-0.ocp67.i8c-lab-02.iconos.be.
+			IN	SRV	0	10	2380	etcd-1.ocp67.i8c-lab-02.iconos.be.
+			IN	SRV	0	10	2380	etcd-2.ocp67.i8c-lab-02.iconos.be.

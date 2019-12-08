@@ -1,0 +1,8 @@
+{
+"id": "master-0",
+"name": "OCP 4 – Master 1",
+"profile": "master",
+"selector": {
+"mac": "00:1a:4a:16:01:29"
+}
+}
